@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "real-estate-toolkit"
+version = "0.1.0"
+description = ""
+authors = ["Gerard Ferrer <gerard.ferrer02@estudiant.upf.edu> , Sergio Haro <sergioignacio.haro01@estudiant.upf.edu> and Arnau Pascual <arnau.pascual01@estudiant.upf.edu>"]
+readme = "README.md"
+packages = [{include = "real_estate_toolkit", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.13"
+numpy = "^2.1.3"
+polars = "^1.16.0"
+plotly = "^5.24.1"
+scikit-learn = "^1.5.2"
+pyarrow = "^18.1.0"
+statsmodels = "^0.14.4"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
